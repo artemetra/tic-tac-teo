@@ -1,0 +1,51 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    
+}
+
+table {
+    font-size: 40px;
+    font-family: monospace;
+    width: 500px;
+    height: 500px;
+}
+
+.dragcont {
+    float: left;
+    width: 128px;
+    height: 128px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.Xs, .Os {
+  width: 128px;
+  height: 128px;
+}
+
+.container {
+    display: flex;
+}
+
+.board {
+    flex: 0 0 65%;
+}
+
+.initPositions {
+    flex: 1;
+}
+
+#resetButton {
+    height: 50px;
+    width: 100px;
+}
+
+#playerDisplay {
+    font-family: Georgia;
+    font-size: 60px;
+}

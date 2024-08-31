@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic-Tac-Teo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script> 
+    <button type="button" id="resetButton" onclick="reset(event)">Återställa</button>
+    <h1 id="playerDisplay">Spelare: X</h1>
+    <div class="container">
+        <table id="board">
+            <tr>
+                <td><div class="dragcont" id="td00" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                <td><div class="dragcont" id="td01" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                <td><div class="dragcont" id="td02" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+            </tr>
+            <tr>
+                <td><div class="dragcont" id="td10" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                <td><div class="dragcont" id="td11" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                <td><div class="dragcont" id="td12" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+            </tr>
+            <tr>
+                <td><div class="dragcont" id="td20" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                <td><div class="dragcont" id="td21" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                <td><div class="dragcont" id="td22" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+            </tr>
+        </table> 
+        <div class="initPositions">
+            <div id="initPositionsX">
+                <img src="x.png" draggable="true" ondragstart="drag(event)" class="Xs" id="X1">
+                <img src="x.png" draggable="true" ondragstart="drag(event)" class="Xs" id="X2">
+                <img src="x.png" draggable="true" ondragstart="drag(event)" class="Xs" id="X3">
+            </div>
+            <br><br>
+            <div id="initPositionsO">
+                <img src="o.png" draggable="false" ondragstart="drag(event)" class="Os" id="O1">
+                <img src="o.png" draggable="false" ondragstart="drag(event)" class="Os" id="O2">
+                <img src="o.png" draggable="false" ondragstart="drag(event)" class="Os" id="O3">
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
