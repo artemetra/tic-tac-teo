@@ -8,7 +8,9 @@
     <script src="script.js"></script> 
     <button type="button" id="resetButton" onclick="reset(event)">Återställa</button>
     <h1 id="playerDisplay">Spelare: X</h1>
+    <h4 id="mateDisplay"></h4>
     <div class="container">
+        <!-- TODO: remove code repetition? -->
         <table id="board">
             <tr>
                 <td><div class="dragcont" id="td00" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
