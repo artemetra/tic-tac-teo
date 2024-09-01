@@ -22,7 +22,6 @@ function turnUpdate() {
         document.getElementById("mateDisplay").innerText =
             playerToString(mate) + " har schackmatt!";
     } else {
-        console.log("bruh");
         document.getElementById("mateDisplay").innerText = "";
     }
     winner = checkVictory(X) || checkVictory(O);
@@ -235,9 +234,6 @@ function drag(ev) {
     id = ev.target.id;
     if (stringToPlayer(id[0]) === player) {
         ev.dataTransfer.setData("text", id);
-        console.log("drag " + id);
-    } else {
-        console.log("not your turn broski");
     }
 }
 
